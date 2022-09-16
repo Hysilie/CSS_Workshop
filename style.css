@@ -15,11 +15,25 @@ nav {
     width: 100 vw;
     background-color: #a44104 ;
     margin: 0;
+    padding: 0;
+}
+
+nav > h1 {
+    font-size: 2rem;
+    padding : 0;
+    margin: 0;
+}
+
+nav > h1:hover {
+    cursor: pointer;
+}
+
+a { 
+    all :unset;
 }
 
 ul {
     display: flex;
-    flex-wrap: wrap;
     margin: 0;
     padding:0;
 }
@@ -38,12 +52,7 @@ li:hover {
     transition: 0.5s;
 }
 
-li:first-child{
-    font-size: 2rem;
-    font-weight: bold;
-    flex-basis: 100%;
-    margin:0;
-}
+
 
 header {
     margin: 0;
@@ -88,7 +97,6 @@ article {
 article:hover {
     background-image: url("https://images.pexels.com/photos/695207/pexels-photo-695207.jpeg?auto=compress&cs=tinysrgb&w=800");
     color:#ffffff;
-    transition: 0.2s;
     cursor: pointer;
 }
 
