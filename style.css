@@ -1,3 +1,38 @@
+@media screen and (max-width: 600px){
+    .winter {
+        background-color: var(--primaryWinter);
+        color: var(--textWinter);
+    }
+
+    .snow:hover {
+        background-color: var(--hoverWinter);
+    }
+
+    .snowFlake {
+        background: var(--imgWinter) 
+        no-repeat center fixed;
+        -webkit-background-size: cover;
+    }
+    
+    .flake:hover {
+        background-image: var(--imgWinter);
+    }
+ }
+
+:root {
+    --primaryAutumn:#a44104;
+    --textAutumn: white;
+    --imgAutumn: url("https://images.pexels.com/photos/695207/pexels-photo-695207.jpeg?auto=compress&cs=tinysrgb&w=800");
+    --hoverAutumn: #d6bda7;;
+
+    --primaryWinter:#386c96;
+    --textWinter : white;
+    --imgWinter: url("https://images.pexels.com/photos/1438761/pexels-photo-1438761.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    --hoverWinter: #96bedc;
+}
+
+
+
 * {
     box-sizing: border-box;
 }
@@ -11,9 +46,9 @@ body {
 }
 
 nav {
-    color:white;
+    color:var(--textAutumn);
     width: 100 vw;
-    background-color: #a44104 ;
+    background-color: var(--primaryAutumn);
     margin: 0;
     padding: 0;
 }
@@ -45,7 +80,7 @@ li {
 }
 
 li:hover {
-    background-color: #d6bda7;
+    background-color: var(--hoverAutumn);
     font-size: 1.2rem;
     margin: 0;
     cursor: pointer;
@@ -56,10 +91,11 @@ li:hover {
 
 header {
     margin: 0;
-    color : white;
+    color : var(--textAutumn);
     text-align: center;
     min-height: 250px;
-    background: url("https://images.pexels.com/photos/695207/pexels-photo-695207.jpeg?auto=compress&cs=tinysrgb&w=800") no-repeat center fixed;
+    background: var(--imgAutumn)
+    no-repeat center fixed;
     -webkit-background-size: cover; 
   background-size: cover;
 }
@@ -95,13 +131,13 @@ article {
 }
 
 article:hover {
-    background-image: url("https://images.pexels.com/photos/695207/pexels-photo-695207.jpeg?auto=compress&cs=tinysrgb&w=800");
-    color:#ffffff;
+    background-image: var(--imgAutumn);
+    color:var(--textAutumn);
     cursor: pointer;
 }
 
 footer {
-    background-color: #a44104;
+    background-color: var(--primaryAutumn);
     padding: 1rem;
     color: white;
 }
